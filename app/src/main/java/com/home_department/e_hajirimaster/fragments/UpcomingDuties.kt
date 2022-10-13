@@ -56,27 +56,5 @@ class UpcomingDuties : Fragment(R.layout.upcoming_duties) {
         viewModel.upcomingDutyLiveData.observe(viewLifecycleOwner) {
             setUpRecyclerView(view, it)
         }
-//        val client = ApiClient.apiService?.fetchUpcomingDuty()
-//        client?.enqueue(object : retrofit2.Callback<Demo> {
-//            override fun onResponse(
-//                call: retrofit2.Call<Demo>,
-//                response: Response<Demo>
-//            ) {
-//                if (response.isSuccessful) {
-//                    val result = response.body()?.Duties
-//                    Log.d("Tag123", result.toString())
-//                    result?.let {
-//                        setUpRecyclerView(view, result)
-//                    }
-//                }
-//            }
-//            override fun onFailure(
-//                call: Call<Demo>,
-//                t: Throwable
-//            ) {
-//                Toast.makeText(context, "Unsuccessful", Toast.LENGTH_SHORT).show()
-//            }
-//        }
-//        )
     }
 }
